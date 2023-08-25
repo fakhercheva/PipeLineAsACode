@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Build coplet'
         timeout(time: 5, unit: 'SECONDS') {
-        sh 'sleep 10'
+        bat 'timeout /t 10'
 }
       }
     }
