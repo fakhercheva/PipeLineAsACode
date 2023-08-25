@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Build coplet'
         timeout(time: 5, unit: 'SECONDS') {
-        bat 'timeout /t 2'
+        bat 'ping 127.0.0.1 -n 2 > nul'
 }
       }
     }
